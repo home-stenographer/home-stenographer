@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Home Stenographer",
+    "slug": "home-stenographer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.homestenographer.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Home Stenographer needs microphone access to record conversations",
+        "NSLocalNetworkUsageDescription": "Home Stenographer uses local network for service discovery"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.homestenographer.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Home Stenographer to access your microphone"
+        }
+      ]
+    ]
+  }
+}

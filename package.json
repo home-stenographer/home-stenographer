@@ -1,0 +1,25 @@
+{
+  "name": "home-stenographer",
+  "version": "1.0.0",
+  "description": "Voice recording app for conversations",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "build": "expo prebuild"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.89.0",
+    "expo": "^54.0.30",
+    "expo-av": "^16.0.8",
+    "expo-constants": "^18.0.12",
+    "expo-file-system": "^19.0.21",
+    "react": "^19.2.0",
+    "react-native": "^0.83.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
